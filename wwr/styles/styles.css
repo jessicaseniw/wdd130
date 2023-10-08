@@ -1,0 +1,118 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto; /* To center the content on the page */
+  }
+  
+  /* Center links within the <nav> element */
+  nav a {
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+  }
+  
+  /* Center text within elements with IDs 'hero-msg' and classes 'h1' and 'h4' */
+  #hero-msg h1,
+  #hero-msg h4 {
+    text-align: center;
+  }
+  
+  /* Center text within elements with the class 'button-box' */
+  .button-box {
+    text-align: center;
+  }
+  
+  /* Center text within <section> elements within <main> */
+  main section {
+    text-align: center;
+  }
+  
+  #background {
+    height: 725px;
+  }
+  
+  /* Set the text color for the page's body */
+  body {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Set the text color for the header */
+  header {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Set the text color for links within <nav> when in the hover state */
+  nav a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Set the text color for elements with classes "book" and "join" */
+  .book, .join {
+    background-color: white;
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+  }
+  
+  /* Set the text color for elements with classes "book" and "join" when in the hover state */
+  .book:hover, .join:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Set the text color for the element with the ID "background" */
+  #background {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Set the text color for elements with the class "msg" */
+  .msg {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Set the text color for the footer */
+  footer {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Set the text color for links within the footer */
+  footer a {
+    background-color: white;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* Set the text color for links within the footer when in the hover state */
+  footer a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Set a width of 80px for the .logo class (logo) */
+  .logo {
+    width: 80px;
+  }
+  
+  /* Set a width of 80px for all images with the .icon class (card icons) */
+  .icon {
+    width: 80px;
+  }
+  
+  /* Set a responsive width of 100% for the image with the ID #hero-img (hero image) */
+  #hero-img {
+    width: 100%;
+  }
+  
+  footer p {
+    font-size: 1.2em;
+  }
+  
+  footer p a:hover {
+    text-decoration: underline;
+  }
