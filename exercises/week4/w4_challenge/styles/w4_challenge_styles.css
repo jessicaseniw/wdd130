@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(231, 151, 178);
+}
+
+header h1 {
+    text-align: center;
+    font: 3em sans-serif;
+    color: white;
+    font-weight: bolder;
+    margin: 1% auto;
+    
+}
+ header h1:hover{
+    background-color: rgb(231, 151, 178);
+    color: black;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 100%;
+    margin: 1% auto;
+    font: 1.2em sans-serif;
+    width: 40%;
+    display: block;
+    color:white;
+}
+
+header h3 {
+    text-align: center;
+    font: 1.3em sans-serif;
+    color: white;
+    font-weight: bolder;
+    margin: 1% auto;
+}
+
+header p {
+    margin: 1% auto;
+    font: 1.0em sans-serif;
+    width: 40%;
+    display: block;
+    font-weight: bolder;
+}
+
+img {
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+}
+
+main, footer {
+    text-align: center;
+    font: 1em sans-serif;
+}
+main p {
+    font-size: 100%;
+    margin: 2% auto;
+    font: 1.8em auto;
+    width: 20%;
+    display: block;
+    color: white;
+}
+footer p {
+    font-size: 100%;
+    margin: 0 auto;
+    font: 0.8em sans-serif;
+    width: 25%;
+    display: block;
+}
