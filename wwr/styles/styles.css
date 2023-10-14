@@ -7,6 +7,7 @@
   nav a {
     text-align: center;
     color: black;
+    font-weight: bold;
     text-decoration: none;
   }
   
@@ -46,6 +47,7 @@
   nav a:hover {
     background-color: white;
     color: blue;
+    font-weight: bold;
     text-decoration: none;
   }
   
@@ -62,6 +64,7 @@
   .book:hover, .join:hover {
     background-color: white;
     color: black;
+    font-weight: bold;
   }
   
   /* Set the text color for the element with the ID "background" */
@@ -111,7 +114,7 @@
   
   /* Set a width of 80px for all images with the .icon class (card icons) */
   .icon {
-    width: 20px;
+    width: 80px;
   }
 
   /* Set a color for text on home-tittle */
@@ -130,7 +133,7 @@
   }
   
   footer p {
-    font-size: 1.2em;
+    font-size: 1.0em;
   }
   
   footer p a:hover {
