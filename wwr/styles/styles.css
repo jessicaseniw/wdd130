@@ -111,7 +111,7 @@
   
   /* Set a width of 80px for all images with the .icon class (card icons) */
   .icon {
-    width: 80px;
+    width: 20px;
   }
 
   /* Set a color for text on home-tittle */
