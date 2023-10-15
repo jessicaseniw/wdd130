@@ -1,3 +1,7 @@
+
+/* Importing text fonts to use on the website */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto; /* To center the content on the page */
@@ -9,6 +13,7 @@
     color: black;
     font-weight: bold;
     text-decoration: none;
+    padding: 35px;
   }
   
   /* Center text within elements with IDs 'hero-msg' and classes 'h1' and 'h4' */
@@ -35,12 +40,20 @@
   body {
     background-color: white;
     color: black;
+    font-family: cursive, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0;
   }
   
   /* Set the text color for the header */
   header {
     background-color: white;
     color: black;
+    font-family: cursive, Helvetica, sans-serif;
   }
   
   /* Set the text color for links within <nav> when in the hover state */
@@ -54,10 +67,13 @@
   /* Set the text color for elements with classes "book" and "join" */
   .book, .join {
     text-align: center;
-    background-color: white;
-    color: black;
+    background-color: #FACF39;
+    color: white;
     text-decoration: none;
-
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
   }
   
   /* Set the text color for elements with classes "book" and "join" when in the hover state */
@@ -75,29 +91,36 @@
   
   /* Set the text color for elements with the class "msg" */
   .msg {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
+    line-height: 1.5em;
+    padding: 35px;
   }
 
   .msg h2 {
-    color: black;
+    color: white;
+    font-family: cursive, Helvetica, sans-serif;
   }
 
   .msg p {
-    color: black;
+    color: white;
+    font-size: 0.8em;
+    padding-bottom: 15px;
   }
   
   /* Set the text color for the footer */
   footer {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
   }
   
   /* Set the text color for links within the footer */
   footer a {
-    background-color: white;
+    background-color: black;
     text-align: center;
-    color: black;
+    color: white;
     text-decoration: none;
   }
   
@@ -106,20 +129,39 @@
     background-color: white;
     color: black;
   }
+
+  footer p {
+    font-size: 1.0em;
+  }
   
+  footer p a:hover {
+    text-decoration: underline;
+  }
+
+  footer .social img {
+    padding-top: 15px;
+  }
   /* Set a width of 80px for the .logo class (logo) */
   .logo {
     width: 80px;
+  }
+
+  #logo_link {
+    padding-top: 5px;
   }
   
   /* Set a width of 80px for all images with the .icon class (card icons) */
   .icon {
     width: 80px;
+    padding-top: 10px;
   }
 
   /* Set a color for text on home-tittle */
   .home-tittle {
     color: black;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
   }
 
   /* Set a color for text on h4 */
@@ -132,10 +174,14 @@
     width: 100%;
   }
   
-  footer p {
-    font-size: 1.0em;
+  .rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
   }
-  
-  footer p a:hover {
-    text-decoration: underline;
+
+  .card-img {
+    border: 10px solid black;
+  }
+
+  main section img {
+    box-sizing: border-box;
   }
