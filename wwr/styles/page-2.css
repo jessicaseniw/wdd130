@@ -9,11 +9,14 @@
 
   /* Set the text color for the header */
   header {
+    position: relative;
+    z-index: 2;
     background-color: rgba(17, 17, 17, 0.582);
     color: white;
     font-family: cursive, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 150px auto;
+    padding: 10px;
   }
 
   /* Set a width of 80px for the .logo class (logo) */
@@ -27,6 +30,23 @@
     align-self: center;
     float: none;
   }
+
+  #canyon {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -316px;
+  }
+
+  #canyon-img {
+    width: 400%;
+  }
+
+  #canyon-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+  }
+
   nav {
     display: flex;
     justify-content: space-around;
