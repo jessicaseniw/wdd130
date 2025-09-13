@@ -1,0 +1,41 @@
+main {
+    max-width: 840px;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: rgb(203, 207, 206);
+    color: black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+aside {
+    max-width: 840px;
+    margin: auto;
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: rgb(203, 207, 206);
+    color: black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 2px solid #ccc;
+    text-align: center;
+}
