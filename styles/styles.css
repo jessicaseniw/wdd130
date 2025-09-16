@@ -3,6 +3,8 @@ body {
     padding: 0;
     background-color: rgb(149, 219, 231);
 }
+
+/* Menu bar of the page */
 nav {
     background-color: rgb(24, 101, 114);
     overflow: hidden;
@@ -11,6 +13,7 @@ nav {
     padding: 10px;
 }
 
+/* Menu bar links of the page */
 nav a {
     display: block;
     color: white;
@@ -19,10 +22,12 @@ nav a {
     text-decoration: none;
 }
 
+/* All the titles on the page will follow this formatting pattern */
 h1 {
     color: rgb(24, 101, 114);
 }
 
+/* All the img on the page will follow this formatting pattern */
 img {
     width: 150px;
     height: auto;
@@ -31,6 +36,7 @@ img {
     padding: 0;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
 }
+
 main {
     max-width: 840px;
     overflow: hidden;
@@ -50,9 +56,11 @@ main img {
     height: auto;
 }
 
+/* All the paragraphs on the page will follow this formatting pattern */
 p {
     padding: 0;
 }
+
 aside {
     overflow: hidden;
     max-width: 840px;
@@ -70,6 +78,7 @@ aside img {
     height: auto;
 }
 
+/* All pages must maintain this standardized footer style */
 footer {
     margin-top: 20px;
     border-top: 2px solid rgb(24, 101, 114);
