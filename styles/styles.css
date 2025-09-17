@@ -1,13 +1,14 @@
 /*Class Selectors*/
 
 .box {
-    margin: 1rem;
-    border: 2px transparent rgb(253, 252, 252);
+    margin: 1rem auto;
+    width: 840px;
     padding: 1rem;
+    border: 2px solid rgba(253, 252, 252, 0.1);
     background-color: rgb(253, 252, 252, 0.5);
     color: var(--paragraph-color);
-    border: 2px solid rgb(253, 252, 252, 0.1);
 }
+
 
 *{
     margin: 0;
@@ -89,6 +90,10 @@ main img {
     float: right;
     width: 150px;
     height: auto;
+    border: 2px solid rgba(223, 230, 231, 0.1);
+    border-radius: 5px;
+    padding: 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 p {
@@ -101,34 +106,58 @@ main p {
 }
 
 aside {
-    overflow: hidden;
+    position: relative;
     max-width: 840px;
+    overflow: hidden;
     text-align: var(--text-align);
     font-family: var(--font-family);
-}
-
-aside.box {
-    width: 840px;
-    margin: 20px auto;
-    padding: 1rem;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    display: block;
 }
 
 aside h2 {
-  position: absolute;
-  top: 380px;
-  left: 740px;
-  font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    font-size: 14px;
+    color:var(--color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 180px;
+    margin: 0;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block; /* Faz o container se ajustar à imagem */
+}
+
+.image-container img {
+    display: block; /* Remove espaço extra abaixo da imagem */
+    width: 200px;
+    height: auto;
+}
+
+.image-container h2 {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    font-size: 14px;
+    color:var(--color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0;
 }
 
 /* All pages must maintain this standardized footer style */
 footer {
     margin-top: 20px;
     border-top: 2px solid rgb(24, 101, 114);
+    text-align: center;
 }
 
 footer p {
