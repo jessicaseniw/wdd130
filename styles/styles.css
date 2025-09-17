@@ -57,6 +57,10 @@ h2, h3 {
     color: var(--color);
 }
 
+hr {
+    width: 665px;
+}
+
 /* All the img on the page will follow this formatting pattern */
 img {
     width: 150px;
