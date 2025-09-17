@@ -1,3 +1,19 @@
+/*Class Selectors*/
+
+.box {
+    margin: 1rem;
+    border: 2px transparent rgb(253, 252, 252);
+    padding: 1rem;
+    background-color: rgb(253, 252, 252, 0.4);
+    color: var(--paragraph-color);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --text-align: center;
@@ -13,6 +29,9 @@ body {
 
 /* Menu bar of the page */
 nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     background-color: rgb(24, 101, 114);
     overflow: hidden;
     text-align: var(--text-align);
@@ -22,7 +41,7 @@ nav {
 
 /* Menu bar links of the page */
 nav a {
-    display: block;
+    display: inline;
     color: white;
     text-align: var(--text-align);
     padding: 14px 16px;
@@ -34,9 +53,10 @@ h1 {
     color: var(--color);
 }
 
-h2 {
+h2, h3 {
     color: var(--color);
 }
+
 /* All the img on the page will follow this formatting pattern */
 img {
     width: 150px;
@@ -62,30 +82,39 @@ main {
 }
 
 main img {
+    float: right;
     width: 150px;
     height: auto;
 }
 
-/* All the paragraphs on the page will follow this formatting pattern */
-p {
+main p {
     padding: 0;
+    text-align: justify;
 }
 
 aside {
     overflow: hidden;
     max-width: 840px;
-    margin: auto;
-    border: 2px transparent rgb(253, 252, 252);
-    padding: 10px;
-    background-color: rgb(253, 252, 252, 0.4);
-    color: var(--paragraph-color);
     text-align: var(--text-align);
     font-family: var(--font-family);
+}
+
+aside.box {
+    width: 840px;
+    margin: 20px auto;
+    padding: 1rem;
 }
 
 aside img {
     width: 200px;
     height: auto;
+}
+
+aside h3 {
+  position: absolute;
+  top: 380px;
+  left: 740px;
+  font-size: 14px;
 }
 
 /* All pages must maintain this standardized footer style */
