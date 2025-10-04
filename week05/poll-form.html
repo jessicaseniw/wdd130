@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="author" content="Jéssica Seniw">
+    <meta name="description" content="A simple poll form">
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <main>
+        <hr>
+        <h1>WDD130 | HTML Form - User Poll</h1>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>Fullname: <input type="text" name="fullname" required></label>
+                <br>
+                <label>Email: <input type="email" name="useremail" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <label>What is your favorite programming language?
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br>
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                    <br>
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4"
+                        placeholder="Stillwater Florida, Amsterdam Netehrlands, Tibuktu Mali"></textarea>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>©2025 | HTML Form - User Poll Activity | Jéssica Seniw</p>
+    </footer>
+</body>
+
+</html>
