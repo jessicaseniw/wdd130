@@ -75,48 +75,69 @@ Root HTML element
     Purpose: Contains the primary content of this "Contact Us" page.
     ========================================================= -->
     <main>
+        <!-- Centered titles -->
+        <div class="h1-contact-page">
+            <h1>White Water Rafting Company</h1>
+        </div>
+        <h2>
+            123 Main River Street.
+            <br>Adventure City, RA 12345
+            <br>Phone: (123) 456-7890
+            <br>info@whitewater.com
+        </h2>
 
-        <!-- =========================================================
-        Adventures Section
-        Purpose: Highlight rafting adventures even on the contact page.
-        - Uses class "adventures" for section-specific CSS styling.
-        ========================================================= -->
-        <section class="adventures">
-            <!-- Section heading -->
-            <h2><strong>Adventures Await You!</strong></h2>
+        <!-- GRID: map + form -->
+        <div class="contact-grid">
+            <!-- Map -->
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.8855599854!2d-117.99485928886389!3d33.81526623009486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd291668c42ac9%3A0x113bf3e753fff8e7!2sAdventure%20City!5e0!3m2!1sen!2sbr!4v1759585241709!5m2!1sen!2sbr"
+                    height="1000" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
-            <!-- =========================================================
-            Adventure Gallery
-            - <div> container with class "adventure-gallery" organizes multiple images and captions.
-            - Uses <figure> and <figcaption> for semantic grouping of images with descriptive text.
-            - Improves accessibility and clarity for screen readers.
-            ========================================================= -->
-            <div class="adventure-gallery">
+            <!-- Form -->
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-                <!-- Each figure represents one rafting adventure -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label class="purpose-label">Message Purpose</label>
+                <div class="radio-column">
+                    <label><input type="radio" id="general" name="purpose" value="General Inquiry"> General
+                        Inquiry</label>
+                    <label><input type="radio" id="reservation" name="purpose" value="Reservation Question"> Reservation
+                        Question</label>
+                    <label><input type="radio" id="website" name="purpose" value="Website Suggestion"> Website
+                        Suggestion</label>
+                </div>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+
+                <label><input type="checkbox" id="subscribe" name="subscribe" value="newsletter">Please subscribe me to
+                    the monthly newsletter </label>
+
+                <input type="submit" value="Get in Touch!">
+            </form>
+        </div>
+
+        <!-- Profiles Section -->
+        <section class="profiles">
+            <h3><strong>We Are Here to Serve You</strong></h3>
+            <div class="profile-gallery">
                 <figure>
-                    <img src="images/losdientesdeldiablo.avif" alt="Los Dientes del Diablo">
-                    <figcaption>Los Dientes del Diablo</figcaption>
+                    <img src="images/profile.jpg" alt="Profile 1">
+                    <figcaption>Employee Profile</figcaption>
                 </figure>
-
                 <figure>
-                    <img src="images/bigmallard.avif" alt="Big Mallard">
-                    <figcaption>Big Mallard</figcaption>
+                    <img src="images/profile.jpg" alt="Profile 2">
+                    <figcaption>Employee Profile</figcaption>
                 </figure>
-
                 <figure>
-                    <img src="images/halfdayadventure.avif" alt="Half Day Adventure">
-                    <figcaption>Half Day Adventure</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/wildrapids.avif" alt="Wild Rapids">
-                    <figcaption>Wild Rapids</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/sunset.jpg" alt="Sunset Float">
-                    <figcaption>Sunset Float</figcaption>
+                    <img src="images/profile.jpg" alt="Profile 3">
+                    <figcaption>Employee Profile</figcaption>
                 </figure>
             </div>
         </section>
@@ -128,7 +149,7 @@ Root HTML element
     ========================================================= -->
     <footer>
         <!-- Copyright text -->
-        <p>&copy; 2025 | Whitewater Rafting | Jéssica Seniw</p>
+        <p>&copy; 2025 | Whitewater Rafting | Jessica Seniw</p>
 
         <!-- =========================================================
         Social Media Links
@@ -139,7 +160,7 @@ Root HTML element
         ========================================================= -->
         <nav class="socialmedia">
             <a href="https://www.linkedin.com/in/jessicaseniwborges">
-                <img src="images/linkedin.png" alt="Linkedin Icon">
+                <img src="images/linkedin.png" alt="LinkedIn Icon">
             </a>
             <a href="https://www.facebook.com/jessica.seniw">
                 <img src="images/facebook.png" alt="Facebook Icon">
