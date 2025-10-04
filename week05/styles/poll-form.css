@@ -1,0 +1,209 @@
+/* ==========================================
+Sets the style for the main title (h1), using a serif font and the secondary color.
+========================================== */
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--secondary-color);
+}
+
+/* ==========================================
+Global styles for all elements (*):
+- Applies box-sizing for easier sizing control;
+- Sets a default serif font;
+- Defines a background color;
+- Declares primary and secondary color variables;
+- Removes default margins and padding;
+- Centers all text.
+============================================= */
+* {
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #c97f5c;
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* ==========================================
+Defines base styles for the page body:
+- Uses the chosen font;
+- Sets the font size and text color;
+- Applies the global background color.
+========================================== */
+body {
+  font-family: var(font-family);
+  font-size: 1.2em;
+  color: #333;
+  background: var(background-color);
+}
+
+/* ==========================================
+Styles the header element:
+- Centers it on the page;
+- Sets a fixed width.
+========================================== */
+header {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+/* ==========================================
+Styles the form container:
+- Centers the form;
+- Adds padding, border, and rounded corners;
+- Uses a grid layout for structure;
+- Applies a light gray background color.
+========================================== */
+form {
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  background-color: #eee;
+  display: grid;
+}
+
+/* ==========================================
+Styles each fieldset:
+- Uses a grid layout with spacing between elements;
+- Adds margins, border, and padding;
+- Keeps a consistent light background color.
+========================================== */
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  background-color: #eee;
+}
+
+/* ==========================================
+Styles the legend (fieldset title):
+- Adds padding;
+- Uses a highlighted color;
+- Increases the font size;
+- Matches the background color with the form.
+========================================== */
+legend {
+  padding: 0.5rem;
+  color: rgb(128, 47, 0);
+  font-size: 1.3em;
+  background-color: #eee;
+}
+
+/* ==========================================
+Applies a consistent font to all form elements.
+========================================== */
+label, input, button, select, textarea {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* ==========================================
+Styles all form labels:
+- Centers text horizontally;
+- Adds right padding for spacing;
+- Keeps background consistent with the form.
+========================================== */
+label {
+  text-align: center;
+  padding-right: 1rem;
+  background-color: #eee;
+}
+
+/* ==========================================
+Styles input fields, dropdowns, and text areas:
+- Adds internal padding and increases font size;
+- Uses the same background as the form.
+========================================== */
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  background-color: #eee;
+}
+
+/* ==========================================
+Customizes the size of checkbox inputs for better visibility.
+========================================== */
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+}
+
+/* ==========================================
+Styles the main button:
+- Adds margins and padding;
+- Uses a dark red background and white text;
+- Removes borders and rounds corners;
+- Increases font size for readability.
+========================================== */
+button {
+  margin: 1rem;
+  background-color: rgb(128, 30, 0);
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+/* ==========================================
+Hover effect for the button:
+- Changes background color to dark green.
+========================================== */
+button:hover {
+  background-color: darkgreen;
+}
+
+/* ==========================================
+Styles the footer section:
+- Centers it and adds spacing above;
+- Uses small white text;
+- Adds a top border for visual separation.
+========================================== */
+footer {
+  margin: 1rem auto 0;
+  width: 650px;
+  text-align: center;
+  font-size: 0.8em;
+  color: #ffffff;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* ==========================================
+Base class for form items (.form-item):
+- Uses a grid layout to align labels and inputs;
+- Ensures a uniform light background.
+========================================== */
+.form-item {
+  display: grid;
+  align-items: center;
+  background-color: #eee;
+}
+
+/* ==========================================
+.column1 class:
+- Defines a 3:1 column ratio (label:input);
+- Adds vertical spacing between items;
+- Maintains a consistent background color.
+========================================== */
+.column1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 0.5rem 0;
+  background-color: #eee;
+}
+
+/* ==========================================
+.column2 class:
+- Defines a 1:2 column ratio (label:input);
+- Keeps the same light background color.
+========================================== */
+.column2 {
+  grid-template-columns: 1fr 2fr;
+  background-color: #eee;
+}

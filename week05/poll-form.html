@@ -1,53 +1,160 @@
+<!-- =========================================================
+HTML5 document declaration
+Specifies that the file uses HTML5 standards.
+========================================================= -->
 <!DOCTYPE html>
+
+<!-- =========================================================
+Root HTML element
+- The lang attribute defines the language of the document as English.
+========================================================= -->
 <html lang="en">
 
 <head>
+    <!-- =========================================================
+    Head section
+    Contains metadata and resources needed before rendering the body.
+    ========================================================= -->
+
+    <!-- Character encoding definition (UTF-8 supports all characters) -->
     <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive for different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sets the title shown in the browser tab -->
     <title>Form</title>
+
+    <!-- Author meta tag (identifies the creator of the page) -->
     <meta name="author" content="Jéssica Seniw">
+
+    <!-- Short description of the page for SEO and documentation -->
     <meta name="description" content="A simple poll form">
+
+    <!-- Links an external CSS file that styles the form -->
     <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
 <body>
+    <!-- =========================================================
+    Body section
+    Contains all visible content of the web page.
+    ========================================================= -->
+
+    <!-- =========================================================
+    Main content area
+    Everything related to the form and main heading is inside <main>.
+    ========================================================= -->
     <main>
+        <!-- Horizontal line used for visual separation -->
         <hr>
+
+        <!-- Main heading for the page -->
         <h1>WDD130 | HTML Form - User Poll</h1>
+
+        <!-- =========================================================
+        Form section
+        Contains all input fields where the user can provide information.
+        The form does not specify an "action" or "method" here, 
+        meaning it will use the default behavior (GET request to same page).
+        ========================================================= -->
         <form>
+
+            <!-- =========================================================
+            First fieldset: Contact Information
+            Groups the form inputs related to the user’s personal details.
+            The legend acts as a title for this section.
+            ========================================================= -->
             <fieldset>
                 <legend>Contact Information</legend>
 
-                <label for="fullname">Fullname:</label>
-                <input type="text" id="fullname" name="fullname" required>
-                <br>
-                <label for="useremail">E-mail:</label>
-                <input type="email" id="useremail" name="useremail" required>
+                <!-- =========================================================
+                Full Name field
+                - Div wrapper uses the classes "form-item" and "column2"
+                  for grid layout styling (1 label, 1 input).
+                - Label describes the input.
+                - Input type "text" accepts plain text.
+                - "required" attribute ensures this field must be filled before submission.
+                ========================================================= -->
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <!-- =========================================================
+                Email field
+                - Similar structure as above.
+                - Input type "email" ensures user enters a valid email format.
+                ========================================================= -->
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
             </fieldset>
+
+            <!-- =========================================================
+            Second fieldset: Questions
+            This section contains survey or opinion-based questions.
+            ========================================================= -->
             <fieldset>
-                <legend>Perguntas</legend>
+                <legend>Questions</legend>
 
-                <label for="browser">What is your favorite programming language?</label>
-                <select id="browser" name="browser">
-                    <option value="chrome">Chrome</option>
-                    <option value="firefox">Firefox</option>
-                    <option value="safari">Safari</option>
-                    <option value="edge">Edge</option>
-                    <option value="brave">Brave</option>
-                    <option value="other">Outro</option>
-                </select>
-                <br>
-                <label for="pet">Do you have a household pet?</label>
-                <input type="checkbox" id="pet" name="pet">
-                <br>
+                <!-- =========================================================
+                Dropdown question
+                - Asks the user for their favorite programming language.
+                - <select> element provides multiple <option> choices.
+                - The "id" and "name" attributes help identify the field for CSS and form data.
+                - The container div uses "form-item column1" for layout.
+                ========================================================= -->
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite programming language?</label>
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
 
-                <label for="feedback">List the places you have lived:</label>
-                <textarea id="feedback" name="feedback" rows="4"
-                    placeholder="Stillwater Florida, Amsterdã Holanda, Timbuktu Mali"></textarea>
+                <!-- =========================================================
+                Checkbox question
+                - Asks the user if they have a household pet.
+                - Checkbox allows the user to toggle a yes/no type answer.
+                ========================================================= -->
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+
+                <!-- =========================================================
+                Textarea question
+                - Allows users to type multiple lines of text.
+                - "rows" defines visible height.
+                - "placeholder" gives an example of expected input.
+                ========================================================= -->
+                <div class="form-item">
+                    <label for="feedback">List the places you have lived:</label>
+                    <textarea id="feedback" name="feedback" rows="4"
+                        placeholder="Stillwater, Florida; Amsterdam, Netherlands; Timbuktu, Mali"></textarea>
+                </div>
             </fieldset>
-            <input type="submit" value="submit">
+
+            <!-- =========================================================
+            Submit button
+            - Sends the form data when clicked.
+            - "value" defines the text displayed on the button.
+            ========================================================= -->
+            <input type="submit" value="Submit">
         </form>
     </main>
+
+    <!-- =========================================================
+    Footer section
+    - Contains copyright.
+    - Displays author name and course information.
+    ========================================================= -->
     <footer>
         <p>©2025 | HTML Form - User Poll Activity | Jéssica Seniw</p>
     </footer>
