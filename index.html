@@ -1,19 +1,54 @@
+<!-- =========================================================
+HTML5 Document Declaration
+Purpose: Defines the document as an HTML5 file to ensure modern browser compatibility.
+========================================================= -->
 <!DOCTYPE html>
+
+<!-- =========================================================
+Root HTML element
+- "lang" attribute set to "en" for English content.
+- Helps screen readers and search engines identify the page language.
+========================================================= -->
 <html lang="en">
 
 <head>
+    <!-- =========================================================
+    Head Section
+    Contains metadata, page title, author, description, and link to external CSS.
+    ========================================================= -->
+
+    <!-- Character encoding set to UTF-8 for universal character support -->
     <meta charset="UTF-8">
+
+    <!-- Viewport settings for responsive design across devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title displayed in browser tab -->
     <title>Jéssica Seniw | WDD 130</title>
+
+    <!-- Author metadata for identification -->
     <meta name="author" content="Jéssica Seniw">
+
+    <!-- Description metadata for SEO and search engine previews -->
     <meta name="description" content="Jéssica Seniw's personal webpage for WDD 130 course.">
 
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
+    <!-- =========================================================
+    Header Section
+    Purpose: Contains the navigation menu for site-wide page access.
+    ========================================================= -->
     <header>
-        <!-- Navigation menu of the page -->
+
+        <!-- =========================================================
+        Navigation Menu
+        - <nav> is semantic for navigation.
+        - Contains <a> links for Home, Rafting Website, LinkedIn, and Facebook.
+        - External links open in new tabs via "target=_blank".
+        ========================================================= -->
         <nav>
             <a href="#">Home</a>
             <a href="wwr/">Rafting Website</a>
@@ -22,45 +57,89 @@
         </nav>
     </header>
 
-    <!-- Grid container with aside + main -->
+    <!-- =========================================================
+    Grid Layout Container
+    Purpose: Organize aside (sidebar) and main content in a grid layout.
+    - Uses "grid" class for CSS Grid styling.
+    ========================================================= -->
     <div class="grid">
+
+        <!-- =========================================================
+        Aside Section
+        Purpose: Sidebar content with image and informational text.
+        - Class "box" likely applies consistent padding, border, and background styling.
+        ========================================================= -->
         <aside class="box">
+
+            <!-- Image container with title overlay -->
             <div class="image-container">
+                <!-- Image of Porto Alegre, capital of Rio Grande do Sul -->
                 <img src="images/portoalegre.jpg" alt="Capital of Southern Brazil">
+                <!-- Subtitle for the image -->
                 <h2>Rio Grande do Sul</h2>
             </div>
-            <p>Rio Grande do Sul is the southernmost state in Brazil, known for its rich cultural heritage and beautiful
+
+            <!-- Informational paragraph about Rio Grande do Sul -->
+            <p>
+                Rio Grande do Sul is the southernmost state in Brazil, known for its rich cultural heritage and
+                beautiful
                 landscapes. The capital city, Porto Alegre, is a vibrant urban center with a mix of modern and
                 historical architecture. The state is famous for its gaucho culture, traditional cuisine, and annual
                 festivals that celebrate its history and traditions. Visitors to Rio Grande do Sul can enjoy a variety
                 of outdoor activities, including hiking in the Serra Gaúcha region and exploring the stunning coastline
-                along the Atlantic Ocean.</p>
+                along the Atlantic Ocean.
+            </p>
         </aside>
 
+        <!-- =========================================================
+        Main Content Section
+        Purpose: Main information about the webpage owner and personal content.
+        ========================================================= -->
         <main>
+
+            <!-- Page main heading -->
             <h1>Jéssica Seniw | WDD 130</h1>
 
+            <!-- Profile image -->
             <img src="images/profile.jpg" alt="My Profile">
-            <p>Hello! My name is Jéssica Seniw, and I am originally from Brazil. I am currently
+
+            <!-- Personal introduction paragraph -->
+            <p>
+                Hello! My name is Jéssica Seniw, and I am originally from Brazil. I am currently
                 pursuing a degree in Web Development because I have a strong passion for technology and creativity. In
                 my free time, I enjoy hiking, reading, and exploring new places. I am excited to be part of this course
                 and look forward to learning more about web development and enhancing my skills.
             </p>
+
+            <!-- =========================================================
+            Favorite Temples Section
+            Purpose: List personal favorite temples with external links.
+            - Uses <ul> unordered list with class "box" for consistent styling.
+            - Each <li> contains an <a> link to an external temple page, opening in a new tab.
+            ========================================================= -->
             <h2>My Favorite Temples</h2>
             <ul class="box">
-                <li><a href="https://churchofjesuschristtemples.org/provo-city-center-temple" target="_blank">Provo City
-                        Center Temple</a></li>
-                <li><a href="https://churchofjesuschristtemples.org/porto-alegre-brazil-temple" target="_blank">Porto
-                        Alegre Brazil Temple</a></li>
-                <li><a href="https://churchofjesuschristtemples.org/joao-pessoa-brazil-temple" target="_blank">João
-                        Pessoa Brazil Temple</a></li>
+                <li><a href="https://churchofjesuschristtemples.org/provo-city-center-temple" target="_blank">
+                        Provo City Center Temple
+                    </a></li>
+                <li><a href="https://churchofjesuschristtemples.org/porto-alegre-brazil-temple" target="_blank">
+                        Porto Alegre Brazil Temple
+                    </a></li>
+                <li><a href="https://churchofjesuschristtemples.org/joao-pessoa-brazil-temple" target="_blank">
+                        João Pessoa Brazil Temple
+                    </a></li>
             </ul>
         </main>
     </div>
 
-    <!-- Footer -->
+    <!-- =========================================================
+    Footer Section
+    Purpose: Display copyright information and page ownership.
+    ========================================================= -->
     <footer>
-        <p>WDD 130 Site &copy; 2025 🌲 Jéssica Seniw 🌲 Rio Grande do Sul, Brazil</p>
+        <p>
+            WDD 130 Site &copy; 2025 🌲 Jéssica Seniw 🌲 Rio Grande do Sul, Brazil
+        </p>
     </footer>
 </body>
 

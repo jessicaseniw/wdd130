@@ -1,15 +1,154 @@
+<!-- =========================================================
+HTML5 Document Declaration
+- Specifies that this document adheres to HTML5 standards.
+- Ensures modern browser compatibility and proper rendering.
+========================================================= -->
 <!DOCTYPE html>
-<html lang="en">
+
+<!-- =========================================================
+Root HTML element
+- The "lang" attribute sets the page language to English (US variant)
+- Helps search engines and accessibility tools determine language.
+========================================================= -->
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <!-- =========================================================
+    Head Section
+    Contains metadata, page title, author info, description, and link to CSS.
+    ========================================================= -->
 
+    <!-- Character encoding set to UTF-8 for universal character support -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design: scales page for devices of different widths -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed in browser tab -->
+    <title>Contact Us – Whitewater Rafting</title>
+
+    <!-- Author metadata -->
+    <meta name="author" content="Jessica Seniw">
+
+    <!-- Page description metadata for SEO and search previews -->
+    <meta name="description"
+        content="Get in touch with Whitewater Rafting for inquiries, bookings, and more information about our rafting adventures.">
+
+    <!-- Link to external CSS stylesheet controlling layout, colors, fonts, and responsiveness -->
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+    <!-- =========================================================
+    Header Section
+    Purpose: Displays company logo and primary navigation menu
+    The "grid" class suggests CSS Grid is used for layout.
+    ========================================================= -->
+    <header class="grid">
 
+        <!-- =========================================================
+        Company Logo
+        - <img> element displays logo.
+        - "alt" attribute provides descriptive text for screen readers and SEO.
+        - "width" ensures consistent sizing.
+        ========================================================= -->
+        <img src="images/logo.avif" alt="Logo" width="150">
+
+        <!-- =========================================================
+        Navigation Menu
+        Purpose: Provide links to main website pages.
+        - <nav> is semantic for navigation.
+        - <ul> contains list items for each link.
+        ========================================================= -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- =========================================================
+    Main Section
+    Purpose: Contains the primary content of this "Contact Us" page.
+    ========================================================= -->
+    <main>
+
+        <!-- =========================================================
+        Adventures Section
+        Purpose: Highlight rafting adventures even on the contact page.
+        - Uses class "adventures" for section-specific CSS styling.
+        ========================================================= -->
+        <section class="adventures">
+            <!-- Section heading -->
+            <h2><strong>Adventures Await You!</strong></h2>
+
+            <!-- =========================================================
+            Adventure Gallery
+            - <div> container with class "adventure-gallery" organizes multiple images and captions.
+            - Uses <figure> and <figcaption> for semantic grouping of images with descriptive text.
+            - Improves accessibility and clarity for screen readers.
+            ========================================================= -->
+            <div class="adventure-gallery">
+
+                <!-- Each figure represents one rafting adventure -->
+                <figure>
+                    <img src="images/losdientesdeldiablo.avif" alt="Los Dientes del Diablo">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/bigmallard.avif" alt="Big Mallard">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/halfdayadventure.avif" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/wildrapids.avif" alt="Wild Rapids">
+                    <figcaption>Wild Rapids</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/sunset.jpg" alt="Sunset Float">
+                    <figcaption>Sunset Float</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================================================
+    Footer Section
+    Purpose: Provide copyright information and links to social media.
+    ========================================================= -->
+    <footer>
+        <!-- Copyright text -->
+        <p>&copy; 2025 | Whitewater Rafting | Jéssica Seniw</p>
+
+        <!-- =========================================================
+        Social Media Links
+        - <nav> with class "socialmedia" for layout and styling.
+        - Each <a> links to a social profile.
+        - <img> inside <a> displays clickable social media icons.
+        - "alt" attributes improve accessibility.
+        ========================================================= -->
+        <nav class="socialmedia">
+            <a href="https://www.linkedin.com/in/jessicaseniwborges">
+                <img src="images/linkedin.png" alt="Linkedin Icon">
+            </a>
+            <a href="https://www.facebook.com/jessica.seniw">
+                <img src="images/facebook.png" alt="Facebook Icon">
+            </a>
+            <a href="https://www.instagram.com/jessicaseniw">
+                <img src="images/instagram.png" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
 </body>
 
 </html>

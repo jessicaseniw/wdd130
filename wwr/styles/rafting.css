@@ -1,91 +1,129 @@
+/* =========================================================
+:root
+Purpose: Define CSS custom properties (variables) for consistent color scheme, fonts, and layout styling.
+- Makes it easier to update the theme across the site.
+========================================================= */
 :root {
-    --primary-color: rgb(47, 79, 79);
-    --secondary-color: rgb(0, 191, 255);
-    --accent1-color: rgb(0, 100, 200);
-    --accent2-color: rgb(34, 139, 34);
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: "Arial", "Helvetica", sans-serif;
-    --background-color: rgb(245, 222, 179);
-    --text-color: rgb(31, 13, 5);
+    --primary-color: rgb(47, 79, 79);        /* Dark teal for primary headings and accents */
+    --secondary-color: rgb(0, 191, 255);     /* Bright blue for secondary elements */
+    --accent1-color: rgb(0, 100, 200);       /* Deep blue accent for borders and highlights */
+    --accent2-color: rgb(34, 139, 34);       /* Green accent for special elements */
+    --heading-font: "Times New Roman", "Georgia", serif; /* Font for headings */
+    --body-font: "Arial", "Helvetica", sans-serif;      /* Font for body text */
+    --background-color: rgb(245, 222, 179); /* Light beige background color */
+    --text-color: rgb(31, 13, 5);           /* Dark text color for readability */
 }
 
+/* =========================================================
+Global Styles
+Purpose: Reset default browser margins/padding and set box-sizing.
+========================================================= */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensures padding and border are included in element width */
 }
 
+/* =========================================================
+Body Styling
+Purpose: Apply global font and text color.
+========================================================= */
 body {
-    font-family: var(--body-font);
+    font-family: var(--body-font); /* Uses custom variable */
     color: var(--text-color);
 }
 
+/* =========================================================
+Container Widths
+Purpose: Standardize width and center alignment for major sections.
+========================================================= */
 header, main, footer {
     width: 840px;
-    margin: 0 auto;
+    margin: 0 auto; /* Centers content horizontally */
 }
 
-/* ============================
-   HEADER
-   ============================ */
+/* =========================================================
+HEADER
+Purpose: Style the header container, logo, and navigation.
+========================================================= */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;                   /* Align logo and nav horizontally */
+    justify-content: space-between;  /* Space between logo and menu */
+    align-items: center;             /* Vertically center items */
     background-color: var(--background-color);
     padding: 10px 30px;
-    border-bottom: 4px solid var(--primary-color);
+    border-bottom: 4px solid var(--primary-color); /* Adds visual separation */
 }
 
-/* ============================
-   LOGO
-   ============================ */
+/* =========================================================
+LOGO
+Purpose: Style the logo image.
+========================================================= */
 header img {
-    height: 120px;
-    width: auto;
-    border-radius: 50%;
+    height: 120px;   /* Maintain consistent height */
+    width: auto;     /* Keep aspect ratio */
+    border-radius: 50%; /* Circular shape for visual effect */
 }
 
+/* =========================================================
+GRID CLASS
+Purpose: CSS Grid container for flexible layouts.
+========================================================= */
 .grid {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items:center;
+    grid-template-columns: 1fr 3fr; /* Column layout: logo + main content */
+    align-items: center;
 }
 
+/* =========================================================
+Headings
+Purpose: Style all h1 and h2 elements consistently.
+========================================================= */
 h1, h2 {
-    font-family: var(--font-family);
+    font-family: var(--heading-font); /* Use heading font variable */
     color: var(--text-color);
 }
 
+/* =========================================================
+General spacing for content
+Purpose: Apply margin and padding for nav, paragraph, section, and article.
+========================================================= */
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
 
+/* =========================================================
+NAVIGATION BAR
+Purpose: Flex layout for main navigation links.
+========================================================= */
 nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
+/* Links styling in nav */
 nav a {
     display: block;
-    text-decoration: none;
+    text-decoration: none;  /* Remove underline */
     padding: 5px;
     font-weight: bold;
     font-size: 1.3rem;
     font-family: var(--body-font);
 }
 
-/* ============================
-   NAVIGATION
-   ============================ */
+/* Navigation list */
 nav ul {
-    list-style: none;
-    display: flex;
+    list-style: none;         /* Remove default bullets */
+    display: flex;            /* Horizontal alignment */
     justify-content: space-evenly;
     margin: 0;
     padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;           /* Spacing between links */
 }
 
 nav ul li a {
@@ -94,46 +132,50 @@ nav ul li a {
     font-family: var(--body-font);
     font-weight: bold;
     font-size: 18px;
-    transition: color 0.3s, background-color 0.3s;
+    transition: color 0.3s, background-color 0.3s; /* Smooth hover effects */
     padding: 8px 12px;
     border-radius: 4px;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
 nav ul li a:hover {
-    color: var(--text-color);
+    color: var(--text-color); /* Change text color on hover */
 }
 
+/* =========================================================
+SOCIAL MEDIA LINKS
+Purpose: Remove text decoration for icons.
+========================================================= */
 .socialmedia a {
     text-decoration: none;
 }
 
+/* =========================================================
+HERO SECTION
+Purpose: Display large hero image with overlaid headline and article.
+========================================================= */
 .hero {
-    position: relative;
+    position: relative; /* Allows absolute positioning for text overlay */
 }
 
 .hero img {
     display: block;
     width: 100%;
-    height: auto;
+    height: auto; /* Maintain aspect ratio */
 }
 
 h1 {
-    position: absolute;/*can't change this information.*/
-    top: 20px;/*can't change this information.*/
-    width: 100%;/*can't change this information.*/
-    padding: 16px;/*can't change this information.*/
-    text-align: center;/*can't change this information.*/
-    opacity: 0.7;/*can't change this information.*/
-    background-color: var(--background-color);/*can't change this information.*/
-    color: var(--text-color);/*can't change this information.*/
+    position: absolute;         /* Overlay on hero image */
+    top: 20px;                  /* Distance from top */
+    width: 100%;                /* Full width */
+    padding: 16px;              /* Internal spacing */
+    text-align: center;         /* Center text */
+    opacity: 0.7;               /* Slight transparency */
+    background-color: var(--background-color); /* Contrast behind text */
+    color: var(--text-color);
 }
 
 article {
-    position: absolute; /*can't change this information.*/
+    position: absolute;         /* Overlay at bottom of hero */
     bottom: 20px;
     width: 100%;
     margin: 0;
@@ -147,14 +189,15 @@ article {
 }
 
 .hero article img {
-    float: right; /*can't change this information.*/
+    float: right; /* Align image to right within article */
     padding: 5px;
-    width: 125px; /*can't change this information.*/
+    width: 125px; /* Consistent image size */
 }
 
-/* ============================
-   HISTORY SECTION
-   ============================ */
+/* =========================================================
+HISTORY SECTION
+Purpose: Grid layout for company history text and images.
+========================================================= */
 .history {
     max-width: 1000px;
     margin: 40px auto;
@@ -165,7 +208,7 @@ article {
 .history h2 {
     margin-bottom: 20px;
     color: var(--primary-color);
-    font-family: var(--font-family);
+    font-family: var(--heading-font);
     border-bottom: 2px solid var(--accent1-color);
     display: inline-block;
     padding-bottom: 5px;
@@ -173,7 +216,7 @@ article {
 
 .history-grid {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr auto 1fr; /* Balanced layout: text + image + text */
     gap: 20px;
     align-items: center;
 }
@@ -182,102 +225,104 @@ article {
     width: 250px;
     height: auto;
     border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3); /* Adds depth */
 }
 
 .history-grid p {
     text-align: justify;
     font-family: var(--body-font);
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: 1.6; /* Improves readability */
 }
 
-/* ============================
-   ADVENTURES SECTION
-   ============================ */
+/* =========================================================
+ADVENTURES SECTION
+Purpose: Display adventure images in responsive grid gallery.
+========================================================= */
 .adventures {
-  max-width: 1000px;
-  margin: 50px auto;
-  padding: 20px;
-  text-align: center;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
 }
 
 .adventures h2 {
-  margin-bottom: 30px;
-  color: var(--primary-color);
-  font-family: var(--heading-font);
-  border-bottom: 2px solid var(--accent1-color);
-  display: inline-block;
-  padding-bottom: 5px;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    border-bottom: 2px solid var(--accent1-color);
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 .adventure-gallery {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 imagens lado a lado */
-  gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 images side by side */
+    gap: 15px;
 }
 
 .adventure-gallery figure {
-  margin: 0;
-  background-color: #fdfdfd;
-  border: 1px solid rgba(0,0,0,0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
+    margin: 0;
+    background-color: #fdfdfd;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease; /* Smooth hover scale */
 }
 
 .adventure-gallery figure:hover {
-  transform: scale(1.05);
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .adventure-gallery img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Crop images to fit container */
+    display: block;
 }
 
 .adventure-gallery figcaption {
-  padding: 8px;
-  font-size: 0.9rem;
-  font-family: var(--body-font);
-  font-weight: bold;
-  color: var(--primary-color);
-  background-color: rgba(245, 222, 179, 0.8);
+    padding: 8px;
+    font-size: 0.9rem;
+    font-family: var(--body-font);
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: rgba(245, 222, 179, 0.8);
 }
 
-/* ============================
-   FOOTER
-   ============================ */
+/* =========================================================
+FOOTER
+Purpose: Style footer with text and social media links.
+========================================================= */
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background-color: var(--background-color);
-  color: var(--primary-color);
-  font-family: var(--font-family);
-  border-top: 4px solid var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    border-top: 4px solid var(--primary-color);
 }
 
 footer p {
-  margin: 0;
-  font-size: 0.9rem;
+    margin: 0;
+    font-size: 0.9rem;
 }
 
 footer .socialmedia {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 footer .socialmedia img {
-  width: 32px;
-  height: 32px;
-  display: block;
-  transition: transform 0.3s ease;
+    width: 32px;
+    height: 32px;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
 footer .socialmedia img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1); /* Slight zoom on hover */
 }

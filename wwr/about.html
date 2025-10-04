@@ -1,22 +1,67 @@
+<!-- =========================================================
+HTML5 Document Declaration
+- Specifies that the file follows HTML5 standards, ensuring modern browser compatibility.
+========================================================= -->
 <!DOCTYPE html>
+
+<!-- =========================================================
+Root HTML element
+- The "lang" attribute specifies the primary language of the content (English, US variant).
+- Helps search engines, screen readers, and accessibility tools.
+========================================================= -->
 <html lang="en-US">
 
 <head>
+    <!-- =========================================================
+    Head Section
+    Contains metadata, title, author, description, and links to external resources.
+    ========================================================= -->
+
+    <!-- Character encoding set to UTF-8 for proper display of all characters and symbols -->
     <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on all devices, ensuring correct scaling on phones, tablets, desktops -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page shown on the browser tab -->
     <title>About Us – Whitewater Rafting</title>
+
+    <!-- Author metadata for documentation and ownership identification -->
     <meta name="author" content="Jessica Seniw">
+
+    <!-- Page description metadata for SEO, summarizing the content of this page -->
     <meta name="description"
         content="Learn more about Whitewater Rafting, our history, mission, and passion for adventure.">
+
+    <!-- Link to the external CSS file for layout, typography, colors, and responsive design -->
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+    <!-- =========================================================
+    Header Section
+    Purpose: Contains the company logo and primary navigation menu.
+    The "grid" class indicates this section likely uses CSS Grid for layout.
+    ========================================================= -->
     <header class="grid">
+
+        <!-- =========================================================
+        Company Logo
+        - <img> tag displays the company logo.
+        - "alt" attribute provides descriptive text for accessibility and SEO.
+        - "width" attribute controls image size without affecting layout flow.
+        ========================================================= -->
         <img src="images/logo.avif" alt="Logo" width="150">
-        <!-- Menu bar of the page -->
+
+        <!-- =========================================================
+        Navigation Menu
+        Purpose: Allows users to navigate between pages.
+        - <nav> indicates the semantic navigation section.
+        - <ul> organizes links into an unordered list for screen readers.
+        ========================================================= -->
         <nav>
             <ul>
+                <!-- Each <li> contains a link to a main page of the website -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
@@ -24,53 +69,109 @@
             </ul>
         </nav>
     </header>
+
+    <!-- =========================================================
+    Main Content Area
+    Purpose: Contains the primary content of the "About Us" page.
+    ========================================================= -->
     <main>
+
+        <!-- =========================================================
+        Hero Section
+        Purpose: Introduces the company with a prominent image and headline.
+        - The "hero" class is used for large visual impact.
+        ========================================================= -->
         <div class="hero">
+
+            <!-- Hero image to engage visitors visually -->
             <img src="images/hero.avif" alt="Hero Image">
+
+            <!-- Headline introduces the company name -->
             <h1>Whitewater Rafting</h1>
+
+            <!-- =========================================================
+            Mission Article
+            Purpose: Describe the company’s mission and values in a concise block.
+            - Uses <article> because this content can stand alone semantically.
+            - Includes an image of a happy client to visually reinforce trust.
+            ========================================================= -->
             <article>
                 <img src="images/happyclient.jpg" alt="Happy Client" width="300">
-                <p>Our mission is to provide safe, thrilling rafting adventures while promoting respect for nature and
-                    building a strong community of outdoor enthusiasts.</p>
+                <p>
+                    Our mission is to provide safe, thrilling rafting adventures while promoting respect for nature and
+                    building a strong community of outdoor enthusiasts.
+                </p>
             </article>
         </div>
+
+        <!-- =========================================================
+        History Section
+        Purpose: Describe the origin, growth, and philosophy of the company.
+        - Section has the class "history" for styling purposes.
+        ========================================================= -->
         <section class="history">
+
+            <!-- Section heading -->
             <h2><strong>History</strong></h2>
+
+            <!-- =========================================================
+            History Grid
+            Purpose: Display history text alongside images using a CSS Grid layout.
+            - Each <p> provides a narrative of the company’s development.
+            - Images visually support the historical content.
+            ========================================================= -->
             <div class="history-grid">
                 <p>
                     Founded in 2010, our company began with a small team of passionate river guides dedicated to sharing
                     their love of rafting. Over the years, we have grown into a trusted adventure provider, welcoming
                     thousands of guests and expanding our trips to include some of the region’s most scenic rivers.
                 </p>
+
+                <!-- Early rafting history image -->
                 <img src="images/start.avif" alt="Rafting History">
+
                 <p>
                     Our commitment to safety, customer satisfaction, and environmental stewardship has made us a leader
-                    in
-                    outdoor recreation. Today, we continue to create unforgettable rafting adventures for people of all
-                    ages
-                    and skill levels.
+                    in outdoor recreation. Today, we continue to create unforgettable rafting adventures for people of
+                    all
+                    ages and skill levels.
                 </p>
             </div>
         </section>
+
+        <!-- =========================================================
+        Adventures Section
+        Purpose: Highlight various rafting adventures offered by the company.
+        - Uses the class "adventures" for section-specific styling.
+        ========================================================= -->
         <section class="adventures">
             <h2><strong>Adventures Await You!</strong></h2>
+
+            <!-- Adventure Gallery
+            - Uses <div> with "adventure-gallery" class to organize images and captions.
+            - <figure> groups each image with a <figcaption> for semantic clarity and accessibility.
+            ========================================================= -->
             <div class="adventure-gallery">
                 <figure>
                     <img src="images/losdientesdeldiablo.avif" alt="Los Dientes del Diablo">
                     <figcaption>Los Dientes del Diablo</figcaption>
                 </figure>
+
                 <figure>
                     <img src="images/bigmallard.avif" alt="Big Mallard">
                     <figcaption>Big Mallard</figcaption>
                 </figure>
+
                 <figure>
                     <img src="images/halfdayadventure.avif" alt="Half Day Adventure">
                     <figcaption>Half Day Adventure</figcaption>
                 </figure>
+
                 <figure>
                     <img src="images/wildrapids.avif" alt="Wild Rapids">
                     <figcaption>Wild Rapids</figcaption>
                 </figure>
+
                 <figure>
                     <img src="images/sunset.jpg" alt="Sunset Float">
                     <figcaption>Sunset Float</figcaption>
@@ -78,8 +179,20 @@
             </div>
         </section>
     </main>
+
+    <!-- =========================================================
+    Footer Section
+    Purpose: Provide copyright information and links to social media.
+    ========================================================= -->
     <footer>
         <p>&copy; 2025 | Whitewater Rafting | Jéssica Seniw</p>
+
+        <!-- =========================================================
+        Social Media Navigation
+        - Each <a> links to a social media profile.
+        - <img> inside <a> provides clickable icon for each platform.
+        - Alt attributes ensure accessibility and screen reader support.
+        ========================================================= -->
         <nav class="socialmedia">
             <a href="https://www.linkedin.com/in/jessicaseniwborges">
                 <img src="images/linkedin.png" alt="Linkedin Icon">
